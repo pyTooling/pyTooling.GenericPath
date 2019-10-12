@@ -9,7 +9,7 @@
 
 # pyGenericPath
 
-Description
+A generic path implementation to derive domain specific path libraries.
 
 
 ## Contributors:

@@ -1,7 +1,7 @@
 pyGenericPath Documentation
 ###########################
 
-An exception base-class to derive more powerful exceptions.
+A generic path implementation to derive domain specific path libraries.
 
 .. admonition:: Path Hierarchy
 
