@@ -45,7 +45,7 @@ Updating using PIP
    URL
 
 .. toctree::
-   :caption: Classes
+   :caption: Generic Classes
    :hidden:
 
    pyGenericPath
