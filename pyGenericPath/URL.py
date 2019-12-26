@@ -1,7 +1,6 @@
-# EMACS settings: -*-  tab-width: 2; indent-tabs-mode: t -*-
+# EMACS settings: -*- tab-width: 2; indent-tabs-mode: t -*-
 # vim: tabstop=2:shiftwidth=2:noexpandtab
 # kate: tab-width 2; replace-tabs off; indent-width 2;
-#
 # =============================================================================
 #               ____                      _      ____       _   _
 #  _ __  _   _ / ___| ___ _ __   ___ _ __(_) ___|  _ \ __ _| |_| |__
@@ -49,46 +48,57 @@ from .      import RootMixIn, ElementMixIn, PathMixIn
 regExp = re_compile(r"^(?:(?P<scheme>\w+)://)?(?:(?P<host>(?:\w+|\.)+)(?:\:(?P<port>\d+))?)?(?P<path>[^?#]*)(?:\?(?P<query>[^#]+))?(?:#(?P<fragment>.+))?$")
 
 class Protocols(Flags):
-	TLS =   1
-	HTTP =  2
-	HTTPS = 3
-	FTP =   4
-	FTPS =  5
-	FILE =  8
+	"""Enumeration of supported URL schemes."""
+
+	TLS =   1   #: Transport Layer Security
+	HTTP =  2   #: Hyper Text Transfer Protocol
+	HTTPS = 3   #: SSL/TLS secured HTTP
+	FTP =   4   #: File Transfer Protocol
+	FTPS =  5   #: SSL/TLS secured FTP
+	FILE =  8   #: Local files
 
 
 class Host(RootMixIn):
+	"""Represents a hostname (including the port number) in a URL."""
+
 	_hostname : str = None
 	_port :     int = None
 
-	def __init__(self, hostname, port):
+	def __init__(self, hostname : str, port : int):
 		self._hostname = hostname
 		self._port =     port
 
 	@property
 	def Hostname(self):
+		"""Hostname or IP address as string."""
 		return self._hostname
 
 	@property
 	def Port(self):
+		"""Port number as integer."""
 		return self._port
 
 
 class Element(ElementMixIn):
+	"""Derived class for the URL context."""
 	pass
 
 
 class Path(PathMixIn):
-	ELEMENT_DELIMITER = "/"
-	ROOT_DELIMITER =    "/"
+	"""Represents a path in a URL."""
+
+	ELEMENT_DELIMITER = "/"   #: Delimiter symbol in URLs between path elements.
+	ROOT_DELIMITER =    "/"   #: Delimiter symbol in URLs between root element and first path element.
 
 
 	@classmethod
 	def Parse(cls, path: str, root=None):
-		return super().Parse(path, root, Path, Element)
+		return super().Parse(path, root, cls, Element)
 
 
 class URL():
+	"""Represents a URL including scheme, host, credentials, path, query and fragment."""
+
 	_scheme:    Protocols = None
 	_user:      str =       None
 	_password:  str =       None
@@ -145,6 +155,10 @@ class URL():
 		return self._password
 
 	@property
+	def Host(self):
+		return self._host
+
+	@property
 	def Path(self):
 		return self._path
 
@@ -181,7 +195,7 @@ class URL():
 					key, value = pair.split("=")
 					parameters[key] = value
 
-			return URL(scheme, user, password, hostObj, pathObj, parameters, fragment)
+			return cls(scheme, user, password, hostObj, pathObj, parameters, fragment)
 
 		else:
 			pass

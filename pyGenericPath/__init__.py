@@ -1,7 +1,6 @@
-# EMACS settings: -*-  tab-width: 2; indent-tabs-mode: t -*-
+# EMACS settings: -*- tab-width: 2; indent-tabs-mode: t -*-
 # vim: tabstop=2:shiftwidth=2:noexpandtab
 # kate: tab-width 2; replace-tabs off; indent-width 2;
-#
 # =============================================================================
 #               ____                      _      ____       _   _
 #  _ __  _   _ / ___| ___ _ __   ___ _ __(_) ___|  _ \ __ _| |_| |__
@@ -9,7 +8,6 @@
 # | |_) | |_| | |_| |  __/ | | |  __/ |  | | (__|  __/ (_| | |_| | | |
 # | .__/ \__, |\____|\___|_| |_|\___|_|  |_|\___|_|   \__,_|\__|_| |_|
 # |_|    |___/
-#
 # =============================================================================
 # Authors:						Patrick Lehmann
 #
@@ -42,6 +40,8 @@ from typing import List
 
 
 class Base():
+	"""Base-class for all pyGenericPath path elements"""
+
 	DELIMITER = "/"
 
 	_parent = None #
@@ -51,12 +51,15 @@ class Base():
 
 
 class RootMixIn(Base):
+	"""Mixin-class for root elements in a path system."""
 
 	def __init__(self):
 		super().__init__(None)
 
 
 class ElementMixIn(Base):
+	"""Mixin-class for elements in a path system."""
+
 	_elementName: str = None
 
 	def __init__(self, parent, elementName):
@@ -66,11 +69,10 @@ class ElementMixIn(Base):
 	def __str__(self):
 		return self._elementName
 
-class SystemMixIn():
-	pass
-
 
 class PathMixIn():
+	"""Mixin-class for a path."""
+
 	ELEMENT_DELIMITER = "/"
 	ROOT_DELIMITER =    "/"
 
@@ -97,6 +99,8 @@ class PathMixIn():
 
 	@classmethod
 	def Parse(cls, path: str, root, pathCls, elementCls):
+		"""Parses a string representation of a path and returns a path instance."""
+
 		parent = root
 
 		if path.startswith(cls.ROOT_DELIMITER):
@@ -113,3 +117,9 @@ class PathMixIn():
 			elements.append(element)
 
 		return pathCls(elements, isAbsolute)
+
+
+class SystemMixIn():
+	"""Mixin-class for a path system."""
+
+	pass
