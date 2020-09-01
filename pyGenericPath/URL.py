@@ -184,10 +184,10 @@ class URL():
 			query =     matches.group("query")
 			fragment =  matches.group("fragment")
 
-			scheme = None if (scheme is None) else Protocols.from_str(scheme)
-			hostObj =  None if (host is None)  else Host(host, port)
+			scheme =    None if (scheme is None) else Protocols.from_str(scheme.upper())
+			hostObj =   None if (host is None)   else Host(host, port)
 
-			pathObj =    Path.Parse(path, hostObj)
+			pathObj =   Path.Parse(path, hostObj)
 
 			parameters = {}
 			if (query is not None):
