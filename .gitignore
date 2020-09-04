@@ -1,6 +1,11 @@
 # Python cache and object files
 __pycache__/
-*.py[cod]
+*.py[cod]]
+
+# Coverage.py
+.coverage
+coverage.xml
+/.cov
 
 # Sphinx documentation
 doc/_build

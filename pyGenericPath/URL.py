@@ -52,10 +52,10 @@ class Protocols(Flags):
 
 	TLS =   1   #: Transport Layer Security
 	HTTP =  2   #: Hyper Text Transfer Protocol
-	HTTPS = 3   #: SSL/TLS secured HTTP
-	FTP =   4   #: File Transfer Protocol
-	FTPS =  5   #: SSL/TLS secured FTP
-	FILE =  8   #: Local files
+	HTTPS = 4   #: SSL/TLS secured HTTP
+	FTP =   8   #: File Transfer Protocol
+	FTPS =  16  #: SSL/TLS secured FTP
+	FILE =  32  #: Local files
 
 
 class Host(RootMixIn):
@@ -65,6 +65,7 @@ class Host(RootMixIn):
 	_port :     int = None
 
 	def __init__(self, hostname : str, port : int):
+		super().__init__()
 		self._hostname = hostname
 		self._port =     port
 
@@ -77,6 +78,12 @@ class Host(RootMixIn):
 	def Port(self):
 		"""Port number as integer."""
 		return self._port
+
+	def __str__(self):
+		result = self._hostname
+		if self._port is not None:
+			result += ":" + str(self._port)
+		return result
 
 
 class Element(ElementMixIn):
@@ -129,9 +136,9 @@ class URL():
 				result = self._user + "@" + result
 
 		if self._scheme is not None:
-			result = self._scheme.to_simple_str() + "://" + result
+			result = self._scheme.to_simple_str().lower() + "://" + result
 
-		if self._query is not None:
+		if len(self._query) != 0:
 			params = []
 			for key, value in self._query.items():
 				params.append(key + "=" + value)
