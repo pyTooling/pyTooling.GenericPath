@@ -186,7 +186,7 @@ class URL():
 			user =      None # matches.group("user")
 			password =  None # matches.group("password")
 			host =      matches.group("host")
-			port =      matches.group("port")
+			port =      int(matches.group("port"))
 			path =      matches.group("path")
 			query =     matches.group("query")
 			fragment =  matches.group("fragment")

@@ -1,6 +1,6 @@
 # Python cache and object files
 __pycache__/
-*.py[cod]]
+*.py[cod]
 
 # Coverage.py
 .coverage

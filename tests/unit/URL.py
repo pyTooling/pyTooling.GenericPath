@@ -61,6 +61,9 @@ class GenericPath(TestCase):
 	def test_Protocol(self):
 		self.assertEqual(self.url.Scheme, Protocols.HTTPS)
 
+	def test_Port(self):
+		self.assertEqual(self.url.Host.Port, 8080)
+
 	def test_Hostname(self):
 		self.assertEqual(self.url.Host.Hostname, "paebbels.github.io")
 
