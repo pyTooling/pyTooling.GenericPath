@@ -1,4 +1,4 @@
-name: Test, Collect Coverage
+name: Test and Print Coverage
 
 on: [push]
 
@@ -30,3 +30,15 @@ jobs:
       - name: Report coverage
         run: |
           coverage report
+          coverage xml
+      - name: Publish coverage at CodeCov
+        uses: codecov/codecov-action@v1
+        with:
+          file: ./coverage.xml
+          flags: unittests
+          env_vars: PYTHON
+      - name: Publish coverage at Codacy
+        uses: codacy/codacy-coverage-reporter-action@master
+        with:
+          project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
+          coverage-reports: ./coverage.xml
