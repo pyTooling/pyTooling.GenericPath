@@ -121,5 +121,3 @@ class PathMixIn():
 
 class SystemMixIn():
 	"""Mixin-class for a path system."""
-
-	pass

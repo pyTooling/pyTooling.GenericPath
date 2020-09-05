@@ -88,7 +88,6 @@ class Host(RootMixIn):
 
 class Element(ElementMixIn):
 	"""Derived class for the URL context."""
-	pass
 
 
 class Path(PathMixIn):
