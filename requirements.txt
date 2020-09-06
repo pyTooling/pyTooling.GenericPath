@@ -1,1 +1,1 @@
-py-flags
+py-flags>=1.1.4
