@@ -174,14 +174,17 @@ class URL():
 
 	# http://semaphore.plc2.de:5000/api/v1/semaphore?name=Riviera&foo=bar#page2
 	@classmethod
-	def Parse(cls, path):
+	def Parse(cls, path: str):
 		matches = regExp.match(path)
 		if (matches is not None):
 			scheme =    matches.group("scheme")
 			user =      None # matches.group("user")
 			password =  None # matches.group("password")
 			host =      matches.group("host")
-			port =      int(matches.group("port"))
+
+			port = matches.group("port")
+			if (port is not None):
+				port =      int(port)
 			path =      matches.group("path")
 			query =     matches.group("query")
 			fragment =  matches.group("fragment")
