@@ -8,7 +8,7 @@
 # =============================================================================
 # Authors:            Patrick Lehmann
 #
-# Python unittest:    Testing the pyGenericPath.URL module
+# Python unittest:    Helper functions for unittests
 #
 # Description:
 # ------------------------------------
@@ -35,34 +35,8 @@
 # ============================================================================
 #
 """
-pyGenericPath
-#############
+Module containing test code written for `pyTest <https://www.pytest.org/>`__.
 
 :copyright: Copyright 2007-2021 Patrick Lehmann - Bötzingen, Germany
 :license: Apache License, Version 2.0
 """
-from unittest     import TestCase
-
-from pyGenericPath.URL import URL, Protocols
-
-
-if __name__ == "__main__":
-	print("ERROR: you called a testcase declaration file as an executable module.")
-	print("Use: 'python -m unitest <testcase module>'")
-	exit(1)
-
-
-class GenericPath(TestCase):
-	url : URL = URL.Parse("https://paebbels.github.io:8080/path/to/endpoint?user=paebbels&token=1234567890")
-
-	def test_Protocol(self):
-		self.assertEqual(self.url.Scheme, Protocols.HTTPS)
-
-	def test_Port(self):
-		self.assertEqual(self.url.Host.Port, 8080)
-
-	def test_Hostname(self):
-		self.assertEqual(self.url.Host.Hostname, "paebbels.github.io")
-
-	def test_str(self):
-		self.assertEqual(str(self.url), "https://paebbels.github.io:8080/path/to/endpoint?user=paebbels&token=1234567890")

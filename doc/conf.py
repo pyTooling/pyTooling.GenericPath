@@ -22,11 +22,11 @@ sys.path.insert(0, os.path.abspath('..'))
 # -- Project information -----------------------------------------------------
 
 project = 'pyGenericPath'
-copyright = '2017-2020, Patrick Lehmann'
+copyright = '2017-2021, Patrick Lehmann'
 author = 'Patrick Lehmann'
 
 # The full version, including alpha/beta/rc tags
-release = 'v0.1'
+release = 'v0.2'
 
 
 # -- General configuration ---------------------------------------------------

@@ -1,6 +1,3 @@
-# EMACS settings: -*- tab-width: 2; indent-tabs-mode: t -*-
-# vim: tabstop=2:shiftwidth=2:noexpandtab
-# kate: tab-width 2; replace-tabs off; indent-width 2;
 # =============================================================================
 #               ____                      _      ____       _   _
 #  _ __  _   _ / ___| ___ _ __   ___ _ __(_) ___|  _ \ __ _| |_| |__
@@ -8,7 +5,6 @@
 # | |_) | |_| | |_| |  __/ | | |  __/ |  | | (__|  __/ (_| | |_| | | |
 # | .__/ \__, |\____|\___|_| |_|\___|_|  |_|\___|_|   \__,_|\__|_| |_|
 # |_|    |___/
-#
 # =============================================================================
 # Authors:						Patrick Lehmann
 #
@@ -20,7 +16,7 @@
 #
 # License:
 # ============================================================================
-# Copyright 2017-2020 Patrick Lehmann - Bötzingen, Germany
+# Copyright 2017-2021 Patrick Lehmann - Bötzingen, Germany
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -178,14 +174,17 @@ class URL():
 
 	# http://semaphore.plc2.de:5000/api/v1/semaphore?name=Riviera&foo=bar#page2
 	@classmethod
-	def Parse(cls, path):
+	def Parse(cls, path: str):
 		matches = regExp.match(path)
 		if (matches is not None):
 			scheme =    matches.group("scheme")
 			user =      None # matches.group("user")
 			password =  None # matches.group("password")
 			host =      matches.group("host")
-			port =      int(matches.group("port"))
+
+			port = matches.group("port")
+			if (port is not None):
+				port =      int(port)
 			path =      matches.group("path")
 			query =     matches.group("query")
 			fragment =  matches.group("fragment")
