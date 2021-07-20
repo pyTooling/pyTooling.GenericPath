@@ -21,7 +21,7 @@ Dependencies
 .. _dependency-package:
 
 pyGenericPath Package (Mandatory)
-********************************
+*********************************
 
 .. rubric:: Manually Installing Package Requirements
 
