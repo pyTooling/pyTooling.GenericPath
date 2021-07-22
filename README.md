@@ -2,7 +2,7 @@
 [![Sourcecode License](https://img.shields.io/pypi/l/pyGenericPath?logo=GitHub&label=code%20license)](LICENSE.md)
 [![GitHub tag (latest SemVer incl. pre-release)](https://img.shields.io/github/v/tag/Paebbels/pyGenericPath?logo=GitHub&include_prereleases)](https://github.com/Paebbels/pyGenericPath/tags)
 [![GitHub release (latest SemVer incl. including pre-releases)](https://img.shields.io/github/v/release/Paebbels/pyGenericPath?logo=GitHub&include_prereleases)](https://github.com/Paebbels/pyGenericPath/releases/latest)
-[![GitHub release date](https://img.shields.io/github/release-date/Paebbels/pyGenericPath?logo=GitHub&)](https://github.com/Paebbels/pyGenericPath/releases)
+[![GitHub release date](https://img.shields.io/github/release-date/Paebbels/pyGenericPath?logo=GitHub)](https://github.com/Paebbels/pyGenericPath/releases)
 [![Dependents (via libraries.io)](https://img.shields.io/librariesio/dependents/pypi/pyGenericPath?logo=librariesdotio)](https://github.com/Paebbels/pyGenericPath/network/dependents)  
 [![GitHub Workflow - Build and Test Status](https://img.shields.io/github/workflow/status/Paebbels/pyGenericPath/Unit%20Testing,%20Coverage%20Collection,%20Package,%20Release,%20Documentation%20and%20Publish?label=Pipeline&logo=GitHub%20Actions&logoColor=FFFFFF)](https://github.com/Paebbels/pyGenericPath/actions/workflows/Pipeline.yml)
 [![Codacy - Quality](https://img.shields.io/codacy/grade/ed13ac3d1be0405ea2de08a588bfd325?logo=Codacy)](https://www.codacy.com/manual/Paebbels/pyGenericPath)
@@ -26,13 +26,13 @@ A generic path implementation to derive domain specific path libraries.
 ## Contributors
 
 * [Patrick Lehmann](https://github.com/Paebbels) (Maintainer)
+* [and more...](https://github.com/Paebbels/pyGenericPath/graphs/contributors)
 
 
 ## License
 
-This Python package (source code) is licensed under [Apache License 2.0](LICENSE.md).
-
-<!-- The accompanying documentation is licensed under Creative Commons - Attribution-4.0 (CC-BY 4.0). -->
+This Python package (source code) licensed under [Apache License 2.0](LICENSE.md).  
+The accompanying documentation is licensed under [Creative Commons - Attribution 4.0 (CC-BY 4.0)](doc/Doc-License.rst).
 
 
 -------------------------
