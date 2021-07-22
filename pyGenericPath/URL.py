@@ -33,16 +33,19 @@
 # SPDX-License-Identifier: Apache-2.0
 # ============================================================================
 #
-from re     import compile as re_compile
-from typing import Dict
+from re       import compile as re_compile
+from typing   import Dict
 
-from flags  import Flags
+from flags    import Flags
+from pydecor  import export
 
-from .      import RootMixIn, ElementMixIn, PathMixIn
+from .        import RootMixIn, ElementMixIn, PathMixIn
 
 
 regExp = re_compile(r"^(?:(?P<scheme>\w+)://)?(?:(?P<host>(?:\w+|\.)+)(?:\:(?P<port>\d+))?)?(?P<path>[^?#]*)(?:\?(?P<query>[^#]+))?(?:#(?P<fragment>.+))?$")
 
+
+@export
 class Protocols(Flags):
 	"""Enumeration of supported URL schemes."""
 
@@ -54,6 +57,7 @@ class Protocols(Flags):
 	FILE =  32  #: Local files
 
 
+@export
 class Host(RootMixIn):
 	"""Represents a hostname (including the port number) in a URL."""
 
@@ -82,10 +86,12 @@ class Host(RootMixIn):
 		return result
 
 
+@export
 class Element(ElementMixIn):
 	"""Derived class for the URL context."""
 
 
+@export
 class Path(PathMixIn):
 	"""Represents a path in a URL."""
 
@@ -98,6 +104,7 @@ class Path(PathMixIn):
 		return super().Parse(path, root, cls, Element)
 
 
+@export
 class URL():
 	"""Represents a URL including scheme, host, credentials, path, query and fragment."""
 

@@ -35,7 +35,10 @@
 #
 from typing import List
 
+from pydecor import export
 
+
+@export
 class Base():
 	"""Base-class for all pyGenericPath path elements"""
 
@@ -47,6 +50,7 @@ class Base():
 		self._parent = parent
 
 
+@export
 class RootMixIn(Base):
 	"""Mixin-class for root elements in a path system."""
 
@@ -54,6 +58,7 @@ class RootMixIn(Base):
 		super().__init__(None)
 
 
+@export
 class ElementMixIn(Base):
 	"""Mixin-class for elements in a path system."""
 
@@ -67,6 +72,7 @@ class ElementMixIn(Base):
 		return self._elementName
 
 
+@export
 class PathMixIn():
 	"""Mixin-class for a path."""
 
@@ -116,5 +122,6 @@ class PathMixIn():
 		return pathCls(elements, isAbsolute)
 
 
+@export
 class SystemMixIn():
 	"""Mixin-class for a path system."""
