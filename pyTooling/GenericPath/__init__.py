@@ -38,6 +38,9 @@ from typing import List
 from pydecor import export
 
 
+__version__ = "0.2.2"
+
+
 @export
 class Base():
 	"""Base-class for all pyGenericPath path elements"""

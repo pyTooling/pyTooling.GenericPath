@@ -5,12 +5,10 @@
 # | |_) | |_| | |_| |  __/ | | |  __/ |  | | (__|  __/ (_| | |_| | | |
 # | .__/ \__, |\____|\___|_| |_|\___|_|  |_|\___|_|   \__,_|\__|_| |_|
 # |_|    |___/
-#
 # =============================================================================
 # Authors:            Patrick Lehmann
 #
 # Package installer:  A generic path to derive domain specific path libraries.
-#
 #
 # License:
 # ============================================================================
@@ -31,43 +29,55 @@
 # SPDX-License-Identifier: Apache-2.0
 # ============================================================================
 #
-import setuptools
+from pathlib    import Path
+from setuptools import (
+	setup as setuptools_setup,
+	find_namespace_packages as setuptools_find_namespace_packages
+)
 
-with open("README.md", "r") as file:
+gitHubNamespace =       "pyTooling"
+projectName =           "GenericPath"
+projectNameWithPrefix = "pyTooling." + projectName
+version =               "0.2.2"
+
+# Read README for upload to PyPI
+readmeFile = Path("README.md")
+with readmeFile.open("r") as file:
 	long_description = file.read()
 
-requirements = []
-with open("requirements.txt") as file:
-	for line in file.readlines():
-		requirements.append(line)
+# Read requirements file and add them to package dependency list
+requirementsFile = Path("requirements.txt")
+with requirementsFile.open("r") as file:
+	requirements = [line for line in file.readlines()]
 
-projectName = "pyGenericPath"
+# Derive URLs
+sourceCodeURL =     f"https://github.com/{gitHubNamespace}/{projectName}"
+#documentationURL =  f"https://{gitHubNamespace}.github.io/{projectName}"
+documentationURL =  f"https://{projectName}.readthedocs.io/en/latest/"
 
-github_url =  "https://github.com/Paebbels/" + projectName
-rtd_url =     "https://" + projectName + ".readthedocs.io/en/latest/"
-
-setuptools.setup(
-	name=projectName,
-	version="0.2.2",
+# Assemble all package information
+setuptools_setup(
+	name=projectNameWithPrefix,
+	version=version,
 
 	author="Patrick Lehmann",
 	author_email="Paebbels@gmail.com",
 	# maintainer="Patrick Lehmann",
 	# maintainer_email="Paebbels@gmail.com",
+  license='Apache 2.0',
 
 	description="A generic path implementation to derive domain specific path libraries.",
 	long_description=long_description,
 	long_description_content_type="text/markdown",
 
-	url=github_url,
+	url=sourceCodeURL,
 	project_urls={
-		'Documentation': rtd_url,
-		'Source Code':   github_url,
-		'Issue Tracker': github_url + "/issues"
+		'Documentation': f"{documentationURL}",
+		'Source Code':   f"{sourceCodeURL}",
+		'Issue Tracker': f"{sourceCodeURL}/issues"
 	},
-	# download_url="",
 
-	packages=setuptools.find_packages(exclude=["tests", "tests.*"]),
+	packages=setuptools_find_namespace_packages(exclude=["doc", "doc.*", "tests", "tests.*",]),
 	classifiers=[
 		"License :: OSI Approved :: Apache Software License",
 		"Operating System :: OS Independent",
@@ -76,6 +86,7 @@ setuptools.setup(
 		"Programming Language :: Python :: 3.7",
 		"Programming Language :: Python :: 3.8",
 		"Programming Language :: Python :: 3.9",
+		"Programming Language :: Python :: 3.10",
 		"Development Status :: 3 - Alpha",
 #		"Development Status :: 4 - Beta",
 #		"Development Status :: 5 - Production/Stable",
@@ -86,6 +97,4 @@ setuptools.setup(
 
 	python_requires='>=3.6',
 	install_requires=requirements,
-	# provides=
-	# obsoletes=
 )

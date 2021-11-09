@@ -43,7 +43,7 @@ pyGenericPath
 """
 from unittest     import TestCase
 
-from pyGenericPath.URL import URL, Protocols
+from pyTooling.pyGenericPath.URL import URL, Protocols
 
 
 if __name__ == "__main__":
