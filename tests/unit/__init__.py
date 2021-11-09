@@ -10,10 +10,6 @@
 #
 # Python unittest:    Helper functions for unittests
 #
-# Description:
-# ------------------------------------
-#		TODO
-#
 # License:
 # ============================================================================
 # Copyright 2017-2021 Patrick Lehmann - Bötzingen, Germany
@@ -35,8 +31,8 @@
 # ============================================================================
 #
 """
-pyGenericPath
-#############
+pyTooling.GenericPath
+#####################
 
 :copyright: Copyright 2007-2021 Patrick Lehmann - Bötzingen, Germany
 :license: Apache License, Version 2.0

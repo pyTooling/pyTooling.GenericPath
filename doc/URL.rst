@@ -18,7 +18,7 @@ Implements a *Unified Resource Locator* (URL).
 Protocols
 *********
 
-.. autoclass:: pyGenericPath.URL.Protocols
+.. autoclass:: pyTooling.GenericPath.URL.Protocols
    :show-inheritance:
    :members:
    :private-members:
@@ -27,7 +27,7 @@ Protocols
 Host
 ****
 
-.. autoclass:: pyGenericPath.URL.Host
+.. autoclass:: pyTooling.GenericPath.URL.Host
    :show-inheritance:
    :members:
    :private-members:
@@ -36,7 +36,7 @@ Host
 Element
 *******
 
-.. autoclass:: pyGenericPath.URL.Element
+.. autoclass:: pyTooling.GenericPath.URL.Element
    :show-inheritance:
    :members:
    :private-members:
@@ -45,7 +45,7 @@ Element
 Path
 ****
 
-.. autoclass:: pyGenericPath.URL.Path
+.. autoclass:: pyTooling.GenericPath.URL.Path
    :show-inheritance:
    :members:
    :private-members:
@@ -54,7 +54,7 @@ Path
 URL
 ***
 
-.. autoclass:: pyGenericPath.URL.URL
+.. autoclass:: pyTooling.GenericPath.URL.URL
    :show-inheritance:
    :members:
    :private-members:

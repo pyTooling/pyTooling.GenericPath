@@ -1,10 +1,10 @@
-pyGenericPath
-#############
+pyTooling.GenericPath
+#####################
 
 Base
 ****
 
-.. autoclass:: pyGenericPath.Base
+.. autoclass:: pyTooling.GenericPath.Base
    :show-inheritance:
    :members:
    :private-members:
@@ -13,7 +13,7 @@ Base
 RootMixIn
 *********
 
-.. autoclass:: pyGenericPath.RootMixIn
+.. autoclass:: pyTooling.GenericPath.RootMixIn
    :show-inheritance:
    :members:
    :private-members:
@@ -22,7 +22,7 @@ RootMixIn
 ElementMixIn
 ************
 
-.. autoclass:: pyGenericPath.ElementMixIn
+.. autoclass:: pyTooling.GenericPath.ElementMixIn
    :show-inheritance:
    :members:
    :private-members:
@@ -31,7 +31,7 @@ ElementMixIn
 SystemMixIn
 ***********
 
-.. autoclass:: pyGenericPath.SystemMixIn
+.. autoclass:: pyTooling.GenericPath.SystemMixIn
    :show-inheritance:
    :members:
    :private-members:
@@ -40,7 +40,7 @@ SystemMixIn
 PathMixIn
 *********
 
-.. autoclass:: pyGenericPath.PathMixIn
+.. autoclass:: pyTooling.GenericPath.PathMixIn
    :show-inheritance:
    :members:
    :private-members:

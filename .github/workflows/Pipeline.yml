@@ -152,7 +152,7 @@ jobs:
 
     env:
       PYTHON:   ${{ needs.Coverage.outputs.python }}
-      ARTIFACT: pyGenericPath-wheel
+      ARTIFACT: pyTooling.GenericPath-wheel
     outputs:
       python:   ${{ env.PYTHON }}
       artifact: ${{ env.ARTIFACT }}
@@ -179,7 +179,7 @@ jobs:
         run: |
           python setup.py bdist_wheel
 
-      - name: 📤 Upload 'pyGenericPath' artifact
+      - name: 📤 Upload 'pyTooling.GenericPath' artifact
         uses: actions/upload-artifact@v2
         with:
           name: ${{ env.ARTIFACT }}

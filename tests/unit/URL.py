@@ -8,11 +8,7 @@
 # =============================================================================
 # Authors:            Patrick Lehmann
 #
-# Python unittest:    Testing the pyGenericPath.URL module
-#
-# Description:
-# ------------------------------------
-#		TODO
+# Python unittest:    Testing the pyTooling.GenericPath.URL module
 #
 # License:
 # ============================================================================
@@ -35,15 +31,15 @@
 # ============================================================================
 #
 """
-pyGenericPath
-#############
+pyTooling.GenericPath
+#####################
 
 :copyright: Copyright 2007-2021 Patrick Lehmann - Bötzingen, Germany
 :license: Apache License, Version 2.0
 """
 from unittest     import TestCase
 
-from pyTooling.pyGenericPath.URL import URL, Protocols
+from pyTooling.GenericPath.URL import URL, Protocols
 
 
 if __name__ == "__main__":

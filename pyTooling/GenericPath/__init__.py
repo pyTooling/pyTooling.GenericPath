@@ -43,7 +43,7 @@ __version__ = "0.2.2"
 
 @export
 class Base():
-	"""Base-class for all pyGenericPath path elements"""
+	"""Base-class for all pyTooling.GenericPath path elements"""
 
 	DELIMITER = "/"
 

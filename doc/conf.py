@@ -21,7 +21,7 @@ sys.path.insert(0, os.path.abspath('..'))
 
 # -- Project information -----------------------------------------------------
 
-project = 'pyGenericPath'
+project = 'pyTooling.GenericPath'
 copyright = '2017-2021, Patrick Lehmann'
 author = 'Patrick Lehmann'
 
@@ -102,10 +102,10 @@ autodoc_member_order = "bysource"       # alphabetical, groupwise, bysource
 # Sphinx.Ext.ExtLinks
 # ==============================================================================
 extlinks = {
-	'issue': ('https://github.com/Paebbels/pyGenericPath/issues/%s', 'issue #'),
-	'pull':  ('https://github.com/Paebbels/pyGenericPath/pull/%s', 'pull request #'),
-	'src':   ('https://github.com/Paebbels/pyGenericPath/blob/master/pyGenericPath/%s?ts=2', None),
-#	'test':  ('https://github.com/Paebbels/pyGenericPath/blob/master/test/%s?ts=2', None)
+	'issue': ('https://github.com/pyTooling/pyTooling.GenericPath/issues/%s', 'issue #'),
+	'pull':  ('https://github.com/pyTooling/pyTooling.GenericPath/pull/%s', 'pull request #'),
+	'src':   ('https://github.com/pyTooling/pyTooling.GenericPath/blob/master/pyTooling.GenericPath/%s?ts=2', None),
+#	'test':  ('https://github.com/pyTooling/pyTooling.GenericPath/blob/master/test/%s?ts=2', None)
 }
 
 
