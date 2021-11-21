@@ -1,81 +1,77 @@
-.. |img-pyGenericPath-github| image:: https://img.shields.io/badge/Paebbels-pyGenericPath-323131.svg?logo=github&longCache=true
+.. |img-pyGenericPath-github| image:: https://img.shields.io/badge/pyTooling-pyTooling.GenericPath-323131.svg?logo=github&longCache=true
    :alt: Sourcecode on GitHub
    :height: 22
-   :target: https://github.com/Paebbels/pyGenericPath
-.. |img-pyGenericPath-codelicense| image:: https://img.shields.io/pypi/l/pyGenericPath?logo=GitHub&label=code%20license
+   :target: https://GitHub.com/pyTooling/pyTooling.GenericPath
+.. |img-pyGenericPath-codelicense| image:: https://img.shields.io/pypi/l/pyTooling.GenericPath?logo=GitHub&label=code%20license
    :alt: Sourcecode License
    :height: 22
-.. |img-pyGenericPath-tag| image:: https://img.shields.io/github/v/tag/Paebbels/pyGenericPath?logo=GitHub&include_prereleases
+.. |img-pyGenericPath-tag| image:: https://img.shields.io/github/v/tag/pyTooling/pyTooling.GenericPath?logo=GitHub&include_prereleases
    :alt: GitHub tag (latest SemVer incl. pre-release)
    :height: 22
-   :target: https://github.com/Paebbels/pyGenericPath/tags
-.. |img-pyGenericPath-release| image:: https://img.shields.io/github/v/release/Paebbels/pyGenericPath?logo=GitHub&include_prereleases
+   :target: https://GitHub.com/pyTooling/pyTooling.GenericPath/tags
+.. |img-pyGenericPath-release| image:: https://img.shields.io/github/v/release/pyTooling/pyTooling.GenericPath?logo=GitHub&include_prereleases
    :alt: GitHub release (latest SemVer incl. including pre-releases
    :height: 22
-   :target: https://github.com/Paebbels/pyGenericPath/releases/latest
-.. |img-pyGenericPath-date| image:: https://img.shields.io/github/release-date/Paebbels/pyGenericPath?logo=GitHub
+   :target: https://GitHub.com/pyTooling/pyTooling.GenericPath/releases/latest
+.. |img-pyGenericPath-date| image:: https://img.shields.io/github/release-date/pyTooling/pyTooling.GenericPath?logo=GitHub
    :alt: GitHub release date
    :height: 22
-   :target: https://github.com/Paebbels/pyGenericPath/releases
-.. |img-pyGenericPath-lib-dep| image:: https://img.shields.io/librariesio/dependents/pypi/pyGenericPath?logo=librariesdotio
+   :target: https://GitHub.com/pyTooling/pyTooling.GenericPath/releases
+.. |img-pyGenericPath-lib-dep| image:: https://img.shields.io/librariesio/dependents/pypi/pyTooling.GenericPath?logo=librariesdotio
    :alt: Dependents (via libraries.io)
    :height: 22
-   :target: https://github.com/Paebbels/pyGenericPath/network/dependents
-.. |img-pyGenericPath-gha-pipeline| image:: https://img.shields.io/github/workflow/status/Paebbels/pyGenericPath/Unit%20Testing,%20Coverage%20Collection,%20Package,%20Release,%20Documentation%20and%20Publish?label=Pipeline&logo=GitHub%20Actions&logoColor=FFFFFF
+   :target: https://GitHub.com/pyTooling/pyTooling.GenericPath/network/dependents
+.. |img-pyGenericPath-gha-pipeline| image:: https://img.shields.io/github/workflow/status/pyTooling/pyTooling.GenericPath/Unit%20Testing,%20Coverage%20Collection,%20Package,%20Release,%20Documentation%20and%20Publish?label=Pipeline&logo=GitHub%20Actions&logoColor=FFFFFF
    :alt: GitHub Workflow - Build and Test Status
    :height: 22
-   :target: https://github.com/Paebbels/pyGenericPath/actions/workflows/Pipeline.yml
+   :target: https://GitHub.com/pyTooling/pyTooling.GenericPath/actions/workflows/Pipeline.yml
 .. |img-pyGenericPath-codacy-quality| image:: https://img.shields.io/codacy/grade/ed13ac3d1be0405ea2de08a588bfd325?logo=Codacy
    :alt: Codacy - Quality
    :height: 22
-   :target: https://www.codacy.com/manual/Paebbels/pyGenericPath
+   :target: https://www.codacy.com/manual/pyTooling/pyTooling.GenericPath
 .. |img-pyGenericPath-codacy-coverage| image:: https://img.shields.io/codacy/coverage/ed13ac3d1be0405ea2de08a588bfd325?logo=Codacy
    :alt: Codacy - Line Coverage
    :height: 22
-   :target: https://www.codacy.com/manual/Paebbels/pyGenericPath
-.. |img-pyGenericPath-codecov-coverage| image:: https://img.shields.io/codecov/c/github/Paebbels/pyGenericPath?logo=Codecov
+   :target: https://www.codacy.com/manual/pyTooling/pyTooling.GenericPath
+.. |img-pyGenericPath-codecov-coverage| image:: https://img.shields.io/codecov/c/github/pyTooling/pyTooling.GenericPath?logo=Codecov
    :alt: Codecov - Branch Coverage
    :height: 22
-   :target: https://codecov.io/gh/Paebbels/pyGenericPath
-.. |img-pyGenericPath-lib-rank| image:: https://img.shields.io/librariesio/sourcerank/pypi/pyGenericPath?logo=librariesdotio
+   :target: https://codecov.io/gh/pyTooling/pyTooling.GenericPath
+.. |img-pyGenericPath-lib-rank| image:: https://img.shields.io/librariesio/sourcerank/pypi/pyTooling.GenericPath?logo=librariesdotio
    :alt: Libraries.io SourceRank
    :height: 22
-   :target: https://libraries.io/github/Paebbels/pyGenericPath/sourcerank
-.. |img-pyGenericPath-pypi-tag| image:: https://img.shields.io/pypi/v/pyGenericPath?logo=PyPI&logoColor=FBE072
+   :target: https://libraries.io/github/pyTooling/pyTooling.GenericPath/sourcerank
+.. |img-pyGenericPath-pypi-tag| image:: https://img.shields.io/pypi/v/pyTooling.GenericPath?logo=PyPI&logoColor=FBE072
    :alt: PyPI - Tag
    :height: 22
-   :target: https://pypi.org/project/pyGenericPath/
-.. |img-pyGenericPath-pypi-python| image:: https://img.shields.io/pypi/pyversions/pyGenericPath?logo=PyPI&logoColor=FBE072
+   :target: https://pypi.org/project/pyTooling.GenericPath/
+.. |img-pyGenericPath-pypi-python| image:: https://img.shields.io/pypi/pyversions/pyTooling.GenericPath?logo=PyPI&logoColor=FBE072
    :alt: PyPI - Python Version
    :height: 22
-.. |img-pyGenericPath-pypi-status| image:: https://img.shields.io/pypi/status/pyGenericPath?logo=PyPI&logoColor=FBE072
+.. |img-pyGenericPath-pypi-status| image:: https://img.shields.io/pypi/status/pyTooling.GenericPath?logo=PyPI&logoColor=FBE072
    :alt: PyPI - Status
    :height: 22
-.. |img-pyGenericPath-lib-status| image:: https://img.shields.io/librariesio/release/pypi/pyGenericPath?logo=librariesdotio
+.. |img-pyGenericPath-lib-status| image:: https://img.shields.io/librariesio/release/pypi/pyTooling.GenericPath?logo=librariesdotio
    :alt: Libraries.io status for latest release
    :height: 22
-   :target: https://libraries.io/github/Paebbels/pyGenericPath
-.. |img-pyGenericPath-req-status| image:: https://img.shields.io/requires/github/Paebbels/pyGenericPath
+   :target: https://libraries.io/github/pyTooling/pyTooling.GenericPath
+.. |img-pyGenericPath-req-status| image:: https://img.shields.io/requires/github/pyTooling/pyTooling.GenericPath
    :alt: Requires.io
    :height: 22
-   :target: https://requires.io/github/Paebbels/pyGenericPath/requirements/?branch=master
-.. |img-pyGenericPath-rtd| image:: https://img.shields.io/readthedocs/pygenericpath?label=ReadTheDocs&logo=readthedocs
-   :alt: Read the Docs
-   :height: 22
-   :target: https://pyGenericPath.readthedocs.io/
+   :target: https://requires.io/github/pyTooling/pyTooling.GenericPath/requirements/?branch=master
 .. |img-pyGenericPath-doclicense| image:: https://img.shields.io/badge/doc%20license-CC--BY%204.0-green?logo=readthedocs
    :alt: Documentation License
    :height: 22
-   :target: LICENSE.md
-.. |img-pyGenericPath-doc| image:: https://img.shields.io/badge/doc-read%20now%20%E2%9E%94-blueviolet?logo=readthedocs
+   :target: Doc-License.html
+.. |img-pyGenericPath-doc| image:: https://img.shields.io/badge/doc-read%20now%20%E2%9E%9A-blueviolet?logo=readthedocs
    :alt: Documentation - Read Now!
    :height: 22
-   :target: https://pyGenericPath.readthedocs.io/
+   :target: https://pyTooling.GitHub.io/pyTooling.GenericPath
 
 |img-pyGenericPath-github| |img-pyGenericPath-codelicense| |img-pyGenericPath-tag| |img-pyGenericPath-release| |img-pyGenericPath-date| |img-pyGenericPath-lib-dep| |br|
 |img-pyGenericPath-gha-pipeline| |img-pyGenericPath-codacy-quality| |img-pyGenericPath-codacy-coverage| |img-pyGenericPath-codecov-coverage| |img-pyGenericPath-lib-rank| |br|
 |img-pyGenericPath-pypi-tag| |img-pyGenericPath-pypi-python| |img-pyGenericPath-pypi-status| |img-pyGenericPath-lib-status| |img-pyGenericPath-req-status| |br|
-|img-pyGenericPath-rtd| |img-pyGenericPath-doclicense| |img-pyGenericPath-doc|
+|img-pyGenericPath-doclicense| |img-pyGenericPath-doc|
 
 .. code-block::
 
@@ -117,8 +113,8 @@ URLs with :class:`~pyGenericPath.URL.URL`.
 Contributors
 ************
 
-* `Patrick Lehmann <https://github.com/Paebbels>`_ (Maintainer)
-* `and more... <https://github.com/pyTooling/pyTooling.GenericPath/graphs/contributors>`__
+* `Patrick Lehmann <https://GitHub.com/Paebbels>`_ (Maintainer)
+* `and more... <https://GitHub.com/pyTooling/pyTooling.GenericPath/graphs/contributors>`__
 
 
 

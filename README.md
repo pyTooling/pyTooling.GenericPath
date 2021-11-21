@@ -1,32 +1,31 @@
-[![Sourcecode on GitHub](https://img.shields.io/badge/Paebbels-pyGenericPath-323131.svg?logo=github&longCache=true)](https://github.com/Paebbels/pyGenericPath)
+[![Sourcecode on GitHub](https://img.shields.io/badge/pyTooling-pyTooling.GenericPath-323131.svg?logo=github&longCache=true)](https://GitHub.com/pyTooling/pyTooling.GenericPath)
 [![Sourcecode License](https://img.shields.io/pypi/l/pyGenericPath?logo=GitHub&label=code%20license)](LICENSE.md)
-[![GitHub tag (latest SemVer incl. pre-release)](https://img.shields.io/github/v/tag/Paebbels/pyGenericPath?logo=GitHub&include_prereleases)](https://github.com/Paebbels/pyGenericPath/tags)
-[![GitHub release (latest SemVer incl. including pre-releases)](https://img.shields.io/github/v/release/Paebbels/pyGenericPath?logo=GitHub&include_prereleases)](https://github.com/Paebbels/pyGenericPath/releases/latest)
-[![GitHub release date](https://img.shields.io/github/release-date/Paebbels/pyGenericPath?logo=GitHub)](https://github.com/Paebbels/pyGenericPath/releases)
-[![Dependents (via libraries.io)](https://img.shields.io/librariesio/dependents/pypi/pyGenericPath?logo=librariesdotio)](https://github.com/Paebbels/pyGenericPath/network/dependents)  
-[![GitHub Workflow - Build and Test Status](https://img.shields.io/github/workflow/status/Paebbels/pyGenericPath/Unit%20Testing,%20Coverage%20Collection,%20Package,%20Release,%20Documentation%20and%20Publish?label=Pipeline&logo=GitHub%20Actions&logoColor=FFFFFF)](https://github.com/Paebbels/pyGenericPath/actions/workflows/Pipeline.yml)
-[![Codacy - Quality](https://img.shields.io/codacy/grade/ed13ac3d1be0405ea2de08a588bfd325?logo=Codacy)](https://www.codacy.com/manual/Paebbels/pyGenericPath)
-[![Codacy - Coverage](https://img.shields.io/codacy/coverage/ed13ac3d1be0405ea2de08a588bfd325?logo=Codacy)](https://www.codacy.com/manual/Paebbels/pyGenericPath)
-[![Codecov - Branch Coverage](https://img.shields.io/codecov/c/github/Paebbels/pyGenericPath?logo=Codecov)](https://codecov.io/gh/Paebbels/pyGenericPath)
-[![Libraries.io SourceRank](https://img.shields.io/librariesio/sourcerank/pypi/pyGenericPath?logo=librariesdotio)](https://libraries.io/github/Paebbels/pyGenericPath/sourcerank)  
-[![PyPI](https://img.shields.io/pypi/v/pyGenericPath?logo=PyPI&logoColor=FBE072)](https://pypi.org/project/pyGenericPath/)
-![PyPI - Python Version](https://img.shields.io/pypi/pyversions/pyGenericPath?logo=PyPI&logoColor=FBE072)
-![PyPI - Status](https://img.shields.io/pypi/status/pyGenericPath?logo=PyPI&logoColor=FBE072)
-[![Libraries.io status for latest release](https://img.shields.io/librariesio/release/pypi/pyGenericPath?logo=librariesdotio)](https://libraries.io/github/Paebbels/pyGenericPath)
-[![Requires.io](https://img.shields.io/requires/github/Paebbels/pyGenericPath)](https://requires.io/github/Paebbels/pyGenericPath/requirements/?branch=main)  
-[![Read the Docs](https://img.shields.io/readthedocs/pygenericpath?label=ReadTheDocs&logo=readthedocs)](https://pyGenericPath.readthedocs.io/)
-[![Documentation License](https://img.shields.io/badge/doc%20license-CC--BY%204.0-green?logo=readthedocs)](LICENSE.md)
-[![Documentation - Read Now!](https://img.shields.io/badge/doc-read%20now%20%E2%9E%94-blueviolet?logo=readthedocs)](https://pyGenericPath.readthedocs.io/)
+[![GitHub tag (latest SemVer incl. pre-release)](https://img.shields.io/github/v/tag/pyTooling/pyTooling.GenericPath?logo=GitHub&include_prereleases)](https://GitHub.com/pyTooling/pyTooling.GenericPath/tags)
+[![GitHub release (latest SemVer incl. including pre-releases)](https://img.shields.io/github/v/release/pyTooling/pyTooling.GenericPath?logo=GitHub&include_prereleases)](https://GitHub.com/pyTooling/pyTooling.GenericPath/releases/latest)
+[![GitHub release date](https://img.shields.io/github/release-date/pyTooling/pyTooling.GenericPath?logo=GitHub)](https://GitHub.com/pyTooling/pyTooling.GenericPath/releases)
+[![Dependents (via libraries.io)](https://img.shields.io/librariesio/dependents/pypi/pyTooling.GenericPath?logo=librariesdotio)](https://GitHub.com/pyTooling/pyTooling.GenericPath/network/dependents)  
+[![GitHub Workflow - Build and Test Status](https://img.shields.io/github/workflow/status/pyTooling/pyTooling.GenericPath/Unit%20Testing,%20Coverage%20Collection,%20Package,%20Release,%20Documentation%20and%20Publish?label=Pipeline&logo=GitHub%20Actions&logoColor=FFFFFF)](https://GitHub.com/pyTooling/pyTooling.GenericPath/actions/workflows/Pipeline.yml)
+[![Codacy - Quality](https://img.shields.io/codacy/grade/ed13ac3d1be0405ea2de08a588bfd325?logo=Codacy)](https://www.codacy.com/manual/pyTooling/pyTooling.GenericPath)
+[![Codacy - Coverage](https://img.shields.io/codacy/coverage/ed13ac3d1be0405ea2de08a588bfd325?logo=Codacy)](https://www.codacy.com/manual/pyTooling/pyTooling.GenericPath)
+[![Codecov - Branch Coverage](https://img.shields.io/codecov/c/github/pyTooling/pyToolingGenericPath?logo=Codecov)](https://codecov.io/gh/pyTooling/pyTooling.GenericPath)
+[![Libraries.io SourceRank](https://img.shields.io/librariesio/sourcerank/pypi/pyTooling.GenericPath?logo=librariesdotio)](https://libraries.io/github/pyTooling/pyTooling.GenericPath/sourcerank)  
+[![PyPI](https://img.shields.io/pypi/v/pyTooling.GenericPath?logo=PyPI&logoColor=FBE072)](https://pypi.org/project/pyTooling.GenericPath/)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/pyTooling.GenericPath?logo=PyPI&logoColor=FBE072)
+![PyPI - Status](https://img.shields.io/pypi/status/pyTooling.GenericPath?logo=PyPI&logoColor=FBE072)
+[![Libraries.io status for latest release](https://img.shields.io/librariesio/release/pypi/pyTooling.GenericPath?logo=librariesdotio)](https://libraries.io/github/pyTooling/pyTooling.GenericPath)
+[![Requires.io](https://img.shields.io/requires/github/pyTooling/pyTooling.GenericPath)](https://requires.io/github/pyTooling/pyTooling.GenericPath/requirements/?branch=main)  
+[![Documentation License](https://img.shields.io/badge/doc%20license-CC--BY%204.0-green?logo=readthedocs)](doc/Doc-License.rst)
+[![Documentation - Read Now!](https://img.shields.io/badge/doc-read%20now%20%E2%9E%9A-blueviolet?logo=readthedocs)](https://pyTooling.GitHub.io/pyTooling.GenericPath)
 
-# pyGenericPath
+# pyTooling.GenericPath
 
 A generic path implementation to derive domain specific path libraries.
 
 
 ## Contributors
 
-* [Patrick Lehmann](https://github.com/Paebbels) (Maintainer)
-* [and more...](https://github.com/Paebbels/pyGenericPath/graphs/contributors)
+* [Patrick Lehmann](https://GitHub.com/Paebbels) (Maintainer)
+* [and more...](https://GitHub.com/pyTooling/pyTooling.GenericPath/graphs/contributors)
 
 
 ## License

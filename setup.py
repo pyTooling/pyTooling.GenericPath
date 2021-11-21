@@ -29,6 +29,7 @@
 # SPDX-License-Identifier: Apache-2.0
 # ============================================================================
 #
+from ast        import parse as ast_parse, iter_child_nodes, Assign, Constant, Name
 from pathlib    import Path
 from setuptools import (
 	setup as setuptools_setup,
@@ -37,8 +38,27 @@ from setuptools import (
 
 gitHubNamespace =       "pyTooling"
 projectName =           "GenericPath"
-projectNameWithPrefix = "pyTooling." + projectName
-version =               "0.2.2"
+prefix =                "pyTooling"
+projectNameWithPrefix = f"{prefix}.{projectName}"
+__author =              None
+__email =               None
+__version =             None
+
+# Read __version__ from source file
+versionFile = Path(f"{prefix}/{projectName}/__init__.py")
+with versionFile.open("r") as file:
+	for item in iter_child_nodes(ast_parse(file.read())):
+		if isinstance(item, Assign) and len(item.targets) == 1:
+			target = item.targets[0]
+			value =  item.value
+			if isinstance(target, Name) and target.id == "__author__" and isinstance(value, Constant) and isinstance(value.value, str):
+				__author = value.value
+			if isinstance(target, Name) and target.id == "__email__" and isinstance(value, Constant) and isinstance(value.value, str):
+				__email = value.value
+			if isinstance(target, Name) and target.id == "__version__" and isinstance(value, Constant) and isinstance(value.value, str):
+				__version = value.value
+if __version is None:
+	raise AssertionError(f"Could not extract '__version__' from '{versionFile}'.")
 
 # Read README for upload to PyPI
 readmeFile = Path("README.md")
@@ -51,20 +71,18 @@ with requirementsFile.open("r") as file:
 	requirements = [line for line in file.readlines()]
 
 # Derive URLs
-sourceCodeURL =     f"https://github.com/{gitHubNamespace}/{projectName}"
-#documentationURL =  f"https://{gitHubNamespace}.github.io/{projectName}"
-documentationURL =  f"https://{projectName}.readthedocs.io/en/latest/"
+sourceCodeURL =     f"https://GitHub.com/{gitHubNamespace}/{projectNameWithPrefix}"
+documentationURL =  f"https://{gitHubNamespace}.GitHub.io/{projectNameWithPrefix}"
 
 # Assemble all package information
 setuptools_setup(
 	name=projectNameWithPrefix,
-	version=version,
-
-	author="Patrick Lehmann",
-	author_email="Paebbels@gmail.com",
+	version=__version,
+	author=__author,
+	author_email=__email,
 	# maintainer="Patrick Lehmann",
 	# maintainer_email="Paebbels@gmail.com",
-  license='Apache 2.0',
+	license='Apache 2.0',
 
 	description="A generic path implementation to derive domain specific path libraries.",
 	long_description=long_description,

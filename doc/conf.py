@@ -11,12 +11,13 @@
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
 import os
-import sys
-#sys.path.insert(0, os.path.abspath('.'))
-sys.path.insert(0, os.path.abspath('..'))
-#sys.path.insert(0, os.path.abspath('../pyGenericPath'))
-#sys.path.insert(0, os.path.abspath('_extensions'))
-#sys.path.insert(0, os.path.abspath('_themes/sphinx_rtd_theme'))
+from sys     import path as sys_path
+
+#sys_path.insert(0, os.path.abspath('.'))
+sys_path.insert(0, os.path.abspath('..'))
+#sys_path.insert(0, os.path.abspath('../pyGenericPath'))
+#sys_path.insert(0, os.path.abspath('_extensions'))
+#sys_path.insert(0, os.path.abspath('_themes/sphinx_rtd_theme'))
 
 
 # -- Project information -----------------------------------------------------
@@ -102,10 +103,10 @@ autodoc_member_order = "bysource"       # alphabetical, groupwise, bysource
 # Sphinx.Ext.ExtLinks
 # ==============================================================================
 extlinks = {
-	'issue': ('https://github.com/pyTooling/pyTooling.GenericPath/issues/%s', 'issue #'),
-	'pull':  ('https://github.com/pyTooling/pyTooling.GenericPath/pull/%s', 'pull request #'),
-	'src':   ('https://github.com/pyTooling/pyTooling.GenericPath/blob/master/pyTooling.GenericPath/%s?ts=2', None),
-#	'test':  ('https://github.com/pyTooling/pyTooling.GenericPath/blob/master/test/%s?ts=2', None)
+	'issue': ('https://GitHub.com/pyTooling/pyTooling.GenericPath/issues/%s', 'issue #'),
+	'pull':  ('https://GitHub.com/pyTooling/pyTooling.GenericPath/pull/%s', 'pull request #'),
+	'src':   ('https://GitHub.com/pyTooling/pyTooling.GenericPath/blob/master/pyTooling.GenericPath/%s?ts=2', None),
+#	'test':  ('https://GitHub.com/pyTooling/pyTooling.GenericPath/blob/master/test/%s?ts=2', None)
 }
 
 
