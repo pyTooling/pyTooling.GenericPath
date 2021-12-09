@@ -55,7 +55,7 @@ class Base():
 
 	_parent = None #
 
-	def __init__(self, parent):
+	def __init__(self, parent) -> None:
 		self._parent = parent
 
 
@@ -63,7 +63,7 @@ class Base():
 class RootMixIn(Base):
 	"""Mixin-class for root elements in a path system."""
 
-	def __init__(self):
+	def __init__(self) -> None:
 		super().__init__(None)
 
 
@@ -73,11 +73,11 @@ class ElementMixIn(Base):
 
 	_elementName: str = None
 
-	def __init__(self, parent, elementName):
+	def __init__(self, parent, elementName) -> None:
 		super().__init__(parent)
 		self._elementName = elementName
 
-	def __str__(self):
+	def __str__(self) -> str:
 		return self._elementName
 
 
@@ -91,14 +91,14 @@ class PathMixIn():
 	_isAbsolute: bool = None
 	_elements:   List = None
 
-	def __init__(self, elements, isAbsolute):
+	def __init__(self, elements, isAbsolute) -> None:
 		self._isAbsolute = isAbsolute
 		self._elements =   elements
 
-	def __len__(self):
+	def __len__(self) -> int:
 		return len(self._elements)
 
-	def __str__(self):
+	def __str__(self) -> str:
 		result = self.ROOT_DELIMITER if self._isAbsolute else ""
 
 		if (len(self._elements) > 0):
