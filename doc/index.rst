@@ -58,7 +58,7 @@
 .. |img-pyGenericPath-req-status| image:: https://img.shields.io/requires/github/pyTooling/pyTooling.GenericPath
    :alt: Requires.io
    :height: 22
-   :target: https://requires.io/github/pyTooling/pyTooling.GenericPath/requirements/?branch=master
+   :target: https://requires.io/github/pyTooling/pyTooling.GenericPath/requirements/?branch=main
 .. |img-pyGenericPath-doclicense| image:: https://img.shields.io/badge/doc%20license-CC--BY%204.0-green?logo=readthedocs
    :alt: Documentation License
    :height: 22
@@ -163,7 +163,10 @@ License
    :caption: Appendix
    :hidden:
 
+   Coverage Report ➚ <https://pyTooling.GitHub.io/pyTooling.GenericPath/coverage/>
+   Static Type Check Report ➚ <https://pyTooling.GitHub.io/pyTooling.GenericPath/typing/>
    License
+   Doc-License
    genindex
 
 .. #

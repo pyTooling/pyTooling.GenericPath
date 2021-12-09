@@ -50,14 +50,14 @@ if __name__ == "__main__":
 class GenericPath(TestCase):
 	url : URL = URL.Parse("https://pyTooling.GitHub.io:8080/path/to/endpoint?user=paebbels&token=1234567890")
 
-	def test_Protocol(self):
+	def test_Protocol(self) -> None:
 		self.assertEqual(self.url.Scheme, Protocols.HTTPS)
 
-	def test_Port(self):
+	def test_Port(self) -> None:
 		self.assertEqual(self.url.Host.Port, 8080)
 
-	def test_Hostname(self):
+	def test_Hostname(self) -> None:
 		self.assertEqual(self.url.Host.Hostname, "pyTooling.GitHub.io")
 
-	def test_str(self):
+	def test_str(self) -> None:
 		self.assertEqual(str(self.url), "https://pyTooling.GitHub.io:8080/path/to/endpoint?user=paebbels&token=1234567890")

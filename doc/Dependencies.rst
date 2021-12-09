@@ -10,7 +10,7 @@ Dependencies
 .. |img-pyGenericPath-req-status| image:: https://img.shields.io/requires/github/pyTooling/pyTooling.GenericPath
    :alt: Requires.io
    :height: 22
-   :target: https://requires.io/github/pyTooling/pyTooling.GenericPath/requirements/?branch=master
+   :target: https://requires.io/github/pyTooling/pyTooling.GenericPath/requirements/?branch=main
 
 +------------------------------------------+------------------------------------------+
 | `Libraries.io <https://libraries.io/>`_  | `Requires.io <https://requires.io/>`_    |
@@ -35,12 +35,12 @@ or install the package directly from PyPI (see :ref:`installation`).
 
 .. rubric:: Dependency List
 
-+----------------------------------------------------------+-------------+-------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++----------------------------------------------------------+-------------+-------------------------------------------------------------------------------------------+# ==============================================================================# ==============================================================================----------+
 | **Package**                                              | **Version** | **License**                                                                               | **Dependencies**                                                                                                                                                     |
 +==========================================================+=============+===========================================================================================+======================================================================================================================================================================+
 | `py-flags <https://GitHub.com/pasztorpisti/py-flags>`__  | ≥1.1.4      | `MIT <https://GitHub.com/pasztorpisti/py-flags/blob/master/LICENSE.txt>`__                | * `dictionaries <https://GitHub.com/pasztorpisti/py-dictionaries>`__ (`MIT <https://GitHub.com/pasztorpisti/py-dictionaries/blob/master/LICENSE.txt>`__)             |
 +----------------------------------------------------------+-------------+-------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| `pyTooling <https://GitHub.com/pyTooling/pyTooling>`__   | ≥1.4.4      | `Apache License, 2.0 <https://GitHub.com/pyTooling/pyTooling/blob/master/LICENSE.txt>`__  | *None*                                                                                                                                                               |
+| `pyTooling <https://GitHub.com/pyTooling/pyTooling>`__   | ≥1.5.1      | `Apache License, 2.0 <https://GitHub.com/pyTooling/pyTooling/blob/main/LICENSE.txt>`__  | *None*                                                                                                                                                               |
 +----------------------------------------------------------+-------------+-------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -73,7 +73,7 @@ Use the :file:`tests/requirements.txt` file to install all dependencies via
 +-----------------------------------------------------------+-------------+----------------------------------------------------------------------------------------+----------------------+
 | `pytest-cov <https://GitHub.com/pytest-dev/pytest-cov>`__ | ≥3.0.0      | `MIT <https://GitHub.com/pytest-dev/pytest-cov/blob/master/LICENSE>`__                 | *Not yet evaluated.* |
 +-----------------------------------------------------------+-------------+----------------------------------------------------------------------------------------+----------------------+
-| `Coverage <https://GitHub.com/nedbat/coveragepy>`__       | ≥6.1        | `Apache License, 2.0 <https://GitHub.com/nedbat/coveragepy/blob/master/LICENSE.txt>`__ | *Not yet evaluated.* |
+| `Coverage <https://GitHub.com/nedbat/coveragepy>`__       | ≥6.2        | `Apache License, 2.0 <https://GitHub.com/nedbat/coveragepy/blob/master/LICENSE.txt>`__ | *Not yet evaluated.* |
 +-----------------------------------------------------------+-------------+----------------------------------------------------------------------------------------+----------------------+
 | `mypy <https://GitHub.com/python/mypy>`__                 | ≥0.910      | `MIT <https://GitHub.com/python/mypy/blob/master/LICENSE>`__                           | *Not yet evaluated.* |
 +-----------------------------------------------------------+-------------+----------------------------------------------------------------------------------------+----------------------+
