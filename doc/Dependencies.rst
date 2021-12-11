@@ -6,11 +6,11 @@ Dependencies
 .. |img-pyGenericPath-lib-status| image:: https://img.shields.io/librariesio/release/pypi/pyGenericPath
    :alt: Libraries.io status for latest release
    :height: 22
-   :target: https://libraries.io/github/Paebbels/pyGenericPath
-.. |img-pyGenericPath-req-status| image:: https://img.shields.io/requires/github/Paebbels/pyGenericPath
+   :target: https://libraries.io/github/pyTooling/pyTooling.GenericPath
+.. |img-pyGenericPath-req-status| image:: https://img.shields.io/requires/github/pyTooling/pyTooling.GenericPath
    :alt: Requires.io
    :height: 22
-   :target: https://requires.io/github/Paebbels/pyGenericPath/requirements/?branch=master
+   :target: https://requires.io/github/pyTooling/pyTooling.GenericPath/requirements/?branch=main
 
 +------------------------------------------+------------------------------------------+
 | `Libraries.io <https://libraries.io/>`_  | `Requires.io <https://requires.io/>`_    |
@@ -26,7 +26,7 @@ pyGenericPath Package (Mandatory)
 .. rubric:: Manually Installing Package Requirements
 
 Use the :file:`requirements.txt` file to install all dependencies via ``pip3``
-or install the package directly from PyPI (see :ref:`INSTALL`).
+or install the package directly from PyPI (see :ref:`installation`).
 
 .. code-block:: shell
 
@@ -35,30 +35,28 @@ or install the package directly from PyPI (see :ref:`INSTALL`).
 
 .. rubric:: Dependency List
 
-+----------------------------------------------------------------+-------------+-------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Package**                                                    | **Version** | **License**                                                                               | **Dependencies**                                                                                                                                                     |
-+================================================================+=============+===========================================================================================+======================================================================================================================================================================+
-| `py-flags <https://github.com/pasztorpisti/py-flags>`__        | ≥1.1.4      | `MIT <https://github.com/pasztorpisti/py-flags/blob/master/LICENSE.txt>`__                | * `dictionaries <https://github.com/pasztorpisti/py-dictionaries>`__ (`MIT <https://github.com/pasztorpisti/py-dictionaries/blob/master/LICENSE.txt>`__)             |
-+----------------------------------------------------------------+-------------+-------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| `pydecor <https://github.com/mplanchard/pydecor>`__            | ≥2.0.1      | `MIT <https://github.com/mplanchard/pydecor/blob/master/LICENSE>`__                       | * `dill <https://github.com/uqfoundation/dill>`__ (`BSD 3-clause <https://github.com/uqfoundation/dill/blob/master/LICENSE>`__)                                      |
-|                                                                |             |                                                                                           | * `six <https://github.com/benjaminp/six>`__ (`MIT <https://github.com/benjaminp/six/blob/master/LICENSE>`__)                                                        |
-+----------------------------------------------------------------+-------------+-------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++----------------------------------------------------------+-------------+-------------------------------------------------------------------------------------------+# ==============================================================================# ==============================================================================----------+
+| **Package**                                              | **Version** | **License**                                                                               | **Dependencies**                                                                                                                                                     |
++==========================================================+=============+===========================================================================================+======================================================================================================================================================================+
+| `py-flags <https://GitHub.com/pasztorpisti/py-flags>`__  | ≥1.1.4      | `MIT <https://GitHub.com/pasztorpisti/py-flags/blob/master/LICENSE.txt>`__                | * `dictionaries <https://GitHub.com/pasztorpisti/py-dictionaries>`__ (`MIT <https://GitHub.com/pasztorpisti/py-dictionaries/blob/master/LICENSE.txt>`__)             |
++----------------------------------------------------------+-------------+-------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `pyTooling <https://GitHub.com/pyTooling/pyTooling>`__   | ≥1.5.2      | `Apache License, 2.0 <https://GitHub.com/pyTooling/pyTooling/blob/main/LICENSE.txt>`__  | *None*                                                                                                                                                               |
++----------------------------------------------------------+-------------+-------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 .. _dependency-testing:
 
-Unit Testing / Coverage (Optional)
-**********************************
+Unit Testing / Coverage / Type Checking (Optional)
+**************************************************
 
-Additional Python packages needed for testing and code coverage collection.
-These packages are only needed for developers or on a CI server, thus
-sub-dependencies are not evaluated further.
+Additional Python packages needed for testing, code coverage collection and static type checking. These packages are
+only needed for developers or on a CI server, thus sub-dependencies are not evaluated further.
 
 
 .. rubric:: Manually Installing Test Requirements
 
-Use the :file:`tests/requirements.txt` file to install all dependencies via
-``pip3``. The file will recursively install the mandatory dependencies too.
+Use the :file:`tests/requirements.txt` file to install all dependencies via ``pip3``. The file will recursively install
+the mandatory dependencies too.
 
 .. code-block:: shell
 
@@ -70,11 +68,15 @@ Use the :file:`tests/requirements.txt` file to install all dependencies via
 +-----------------------------------------------------------+-------------+----------------------------------------------------------------------------------------+----------------------+
 | **Package**                                               | **Version** | **License**                                                                            | **Dependencies**     |
 +===========================================================+=============+========================================================================================+======================+
-| `pytest <https://github.com/pytest-dev/pytest>`__         | ≥6.2.4      | `MIT <https://github.com/pytest-dev/pytest/blob/master/LICENSE>`__                     | *Not yet evaluated.* |
+| `pytest <https://GitHub.com/pytest-dev/pytest>`__         | ≥6.2.5      | `MIT <https://GitHub.com/pytest-dev/pytest/blob/master/LICENSE>`__                     | *Not yet evaluated.* |
 +-----------------------------------------------------------+-------------+----------------------------------------------------------------------------------------+----------------------+
-| `pytest-cov <https://github.com/pytest-dev/pytest-cov>`__ | ≥2.12.1     | `MIT <https://github.com/pytest-dev/pytest-cov/blob/master/LICENSE>`__                 | *Not yet evaluated.* |
+| `pytest-cov <https://GitHub.com/pytest-dev/pytest-cov>`__ | ≥3.0.0      | `MIT <https://GitHub.com/pytest-dev/pytest-cov/blob/master/LICENSE>`__                 | *Not yet evaluated.* |
 +-----------------------------------------------------------+-------------+----------------------------------------------------------------------------------------+----------------------+
-| `Coverage <https://github.com/nedbat/coveragepy>`__       | ≥5.5        | `Apache License, 2.0 <https://github.com/nedbat/coveragepy/blob/master/LICENSE.txt>`__ | *Not yet evaluated.* |
+| `Coverage <https://GitHub.com/nedbat/coveragepy>`__       | ≥6.2        | `Apache License, 2.0 <https://GitHub.com/nedbat/coveragepy/blob/master/LICENSE.txt>`__ | *Not yet evaluated.* |
++-----------------------------------------------------------+-------------+----------------------------------------------------------------------------------------+----------------------+
+| `mypy <https://GitHub.com/python/mypy>`__                 | ≥0.910      | `MIT <https://GitHub.com/python/mypy/blob/master/LICENSE>`__                           | *Not yet evaluated.* |
++-----------------------------------------------------------+-------------+----------------------------------------------------------------------------------------+----------------------+
+| `lxml <https://GitHub.com/lxml/lxml>`__                   | ≥4.6.4      | `BSD 3-Clause <https://GitHub.com/lxml/lxml/blob/master/LICENSE.txt>`__                | *Not yet evaluated.* |
 +-----------------------------------------------------------+-------------+----------------------------------------------------------------------------------------+----------------------+
 
 
@@ -83,15 +85,14 @@ Use the :file:`tests/requirements.txt` file to install all dependencies via
 Sphinx Documentation (Optional)
 *******************************
 
-Additional Python packages needed for documentation generation. These packages
-are only needed for developers or on a CI server, thus sub-dependencies are not
-evaluated further.
+Additional Python packages needed for documentation generation. These packages are only needed for developers or on a
+CI server, thus sub-dependencies are not evaluated further.
 
 
 .. rubric:: Manually Installing Documentation Requirements
 
-Use the :file:`doc/requirements.txt` file to install all dependencies via
-``pip3``. The file will recursively install the mandatory dependencies too.
+Use the :file:`doc/requirements.txt` file to install all dependencies via ``pip3``. The file will recursively install
+the mandatory dependencies too.
 
 .. code-block:: shell
 
@@ -103,13 +104,73 @@ Use the :file:`doc/requirements.txt` file to install all dependencies via
 +-------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------+----------------------+
 | **Package**                                                                                     | **Version**  | **License**                                                                                              | **Dependencies**     |
 +=================================================================================================+==============+==========================================================================================================+======================+
-| `Sphinx <https://github.com/sphinx-doc/sphinx>`__                                               | ≥4.1.1       | `BSD 3-Clause <https://github.com/sphinx-doc/sphinx/blob/master/LICENSE>`__                              | *Not yet evaluated.* |
+| `Sphinx <https://GitHub.com/sphinx-doc/sphinx>`__                                               | ≥4.3.0       | `BSD 3-Clause <https://GitHub.com/sphinx-doc/sphinx/blob/master/LICENSE>`__                              | *Not yet evaluated.* |
 +-------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------+----------------------+
-| `sphinx_btd_theme <https://github.com/buildthedocs/sphinx.theme>`__                             | ≥0.5.2       | `MIT <https://github.com/buildthedocs/sphinx.theme/blob/master/LICENSE>`__                               | *Not yet evaluated.* |
+| `sphinx_btd_theme <https://GitHub.com/buildthedocs/sphinx.theme>`__                             | ≥0.5.2       | `MIT <https://GitHub.com/buildthedocs/sphinx.theme/blob/master/LICENSE>`__                               | *Not yet evaluated.* |
 +-------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------+----------------------+
-| !! `sphinx_fontawesome <https://github.com/fraoustin/sphinx_fontawesome>`__                     | ≥0.0.6       | `GPL 2.0 <https://github.com/fraoustin/sphinx_fontawesome/blob/master/LICENSE>`__                        | *Not yet evaluated.* |
+| !! `sphinx_fontawesome <https://GitHub.com/fraoustin/sphinx_fontawesome>`__                     | ≥0.0.6       | `GPL 2.0 <https://GitHub.com/fraoustin/sphinx_fontawesome/blob/master/LICENSE>`__                        | *Not yet evaluated.* |
 +-------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------+----------------------+
-| `sphinx_autodoc_typehints <https://github.com/agronholm/sphinx-autodoc-typehints>`__            | ≥1.12.0      | `MIT <https://github.com/agronholm/sphinx-autodoc-typehints/blob/master/LICENSE>`__                      | *Not yet evaluated.* |
+| `sphinx_autodoc_typehints <https://GitHub.com/agronholm/sphinx-autodoc-typehints>`__            | ≥1.12.0      | `MIT <https://GitHub.com/agronholm/sphinx-autodoc-typehints/blob/master/LICENSE>`__                      | *Not yet evaluated.* |
 +-------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------+----------------------+
-| `Pygments <https://github.com/pygments/pygments>`__                                             | ≥2.9.0       | `BSD 2-Clause <https://github.com/pygments/pygments/blob/master/LICENSE>`__                              | *Not yet evaluated.* |
-+-------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------+----------------------+
+
+
+.. _dependency-packaging:
+
+Packaging (Optional)
+********************
+
+Additional Python packages needed for installation package generation. These packages are only needed for developers or
+on a CI server, thus sub-dependencies are not evaluated further.
+
+
+.. rubric:: Manually Installing Packaging Requirements
+
+Use the :file:`build/requirements.txt` file to install all dependencies via ``pip3``. The file will recursively
+install the mandatory dependencies too.
+
+.. code-block:: shell
+
+   pip3 install -U -r build/requirements.txt
+
+
+.. rubric:: Dependency List
+
++----------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Package**                                                                | **Version**  | **License**                                                                                              | **Dependencies**                                                                                                                                     |
++============================================================================+==============+==========================================================================================================+======================================================================================================================================================+
+| `pyTooling.Packaging <https://GitHub.com/pyTooling/pyTooling.Packaging>`__ | ≥0.3.1       | `Apache License, 2.0 <https://GitHub.com/pyTooling/pyTooling.Packaging/blob/main/LICENSE.md>`__          | * `pyTooling <https://GitHub.com/pyTooling/pyTooling>`__ (`Apache License, 2.0 <https://GitHub.com/pyTooling/pyTooling/blob/main/LICENSE.txt>`__)    |
++----------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `wheel <https://GitHub.com/pypa/wheel>`__                                  | any          | `MIT <https://github.com/pypa/wheel/blob/main/LICENSE.txt>`__                                            | *Not yet evaluated.*                                                                                                                                 |
++----------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
+.. _dependency-publishing:
+
+Publishing (CI-Server only)
+***************************
+
+Additional Python packages needed for publishing the generated installation package to e.g, PyPI or any equivalent
+services. These packages are only needed for maintainers or on a CI server, thus sub-dependencies are not evaluated
+further.
+
+
+.. rubric:: Manually Installing Publishing Requirements
+
+Use the :file:`dist/requirements.txt` file to install all dependencies via ``pip3``. The file will recursively
+install the mandatory dependencies too.
+
+.. code-block:: shell
+
+   pip3 install -U -r dist/requirements.txt
+
+
+.. rubric:: Dependency List
+
++----------------------------------------------------------+--------------+-------------------------------------------------------------------------------------------+----------------------+
+| **Package**                                              | **Version**  | **License**                                                                               | **Dependencies**     |
++==========================================================+==============+===========================================================================================+======================+
+| `wheel <https://GitHub.com/pypa/wheel>`__                | any          | `MIT <https://github.com/pypa/wheel/blob/main/LICENSE.txt>`__                             | *Not yet evaluated.* |
++----------------------------------------------------------+--------------+-------------------------------------------------------------------------------------------+----------------------+
+| `Twine <https://GitHub.com/pypa/twine/>`__               | any          | `Apache License, 2.0 <https://github.com/pypa/twine/blob/main/LICENSE>`__                 | *Not yet evaluated.* |
++----------------------------------------------------------+--------------+-------------------------------------------------------------------------------------------+----------------------+
+

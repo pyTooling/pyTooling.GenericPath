@@ -1,23 +1,18 @@
 # =============================================================================
-#               ____                      _      ____       _   _
-#  _ __  _   _ / ___| ___ _ __   ___ _ __(_) ___|  _ \ __ _| |_| |__
-# | '_ \| | | | |  _ / _ \ '_ \ / _ \ '__| |/ __| |_) / _` | __| '_ \
-# | |_) | |_| | |_| |  __/ | | |  __/ |  | | (__|  __/ (_| | |_| | | |
-# | .__/ \__, |\____|\___|_| |_|\___|_|  |_|\___|_|   \__,_|\__|_| |_|
-# |_|    |___/
+#             _____           _ _               ____                      _      ____       _   _
+#  _ __  _   |_   _|__   ___ | (_)_ __   __ _  / ___| ___ _ __   ___ _ __(_) ___|  _ \ __ _| |_| |__
+# | '_ \| | | || |/ _ \ / _ \| | | '_ \ / _` || |  _ / _ \ '_ \ / _ \ '__| |/ __| |_) / _` | __| '_ \
+# | |_) | |_| || | (_) | (_) | | | | | | (_| || |_| |  __/ | | |  __/ |  | | (__|  __/ (_| | |_| | | |
+# | .__/ \__, ||_|\___/ \___/|_|_|_| |_|\__, (_)____|\___|_| |_|\___|_|  |_|\___|_|   \__,_|\__|_| |_|
+# |_|    |___/                          |___/
 # =============================================================================
 # Authors:            Patrick Lehmann
 #
-# Python unittest:    Testing the pyGenericPath.URL module
-#
-# Description:
-# ------------------------------------
-#		TODO
+# Python unittest:    Testing the pyTooling.GenericPath.URL module
 #
 # License:
 # ============================================================================
 # Copyright 2017-2021 Patrick Lehmann - Bötzingen, Germany
-# Copyright 2007-2016 Patrick Lehmann - Dresden, Germany
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -35,15 +30,15 @@
 # ============================================================================
 #
 """
-pyGenericPath
-#############
+pyTooling.GenericPath
+#####################
 
-:copyright: Copyright 2007-2021 Patrick Lehmann - Bötzingen, Germany
+:copyright: Copyright 2017-2021 Patrick Lehmann - Bötzingen, Germany
 :license: Apache License, Version 2.0
 """
 from unittest     import TestCase
 
-from pyGenericPath.URL import URL, Protocols
+from pyTooling.GenericPath.URL import URL, Protocols
 
 
 if __name__ == "__main__":
@@ -53,16 +48,16 @@ if __name__ == "__main__":
 
 
 class GenericPath(TestCase):
-	url : URL = URL.Parse("https://paebbels.github.io:8080/path/to/endpoint?user=paebbels&token=1234567890")
+	url : URL = URL.Parse("https://pyTooling.GitHub.io:8080/path/to/endpoint?user=paebbels&token=1234567890")
 
-	def test_Protocol(self):
+	def test_Protocol(self) -> None:
 		self.assertEqual(self.url.Scheme, Protocols.HTTPS)
 
-	def test_Port(self):
+	def test_Port(self) -> None:
 		self.assertEqual(self.url.Host.Port, 8080)
 
-	def test_Hostname(self):
-		self.assertEqual(self.url.Host.Hostname, "paebbels.github.io")
+	def test_Hostname(self) -> None:
+		self.assertEqual(self.url.Host.Hostname, "pyTooling.GitHub.io")
 
-	def test_str(self):
-		self.assertEqual(str(self.url), "https://paebbels.github.io:8080/path/to/endpoint?user=paebbels&token=1234567890")
+	def test_str(self) -> None:
+		self.assertEqual(str(self.url), "https://pyTooling.GitHub.io:8080/path/to/endpoint?user=paebbels&token=1234567890")

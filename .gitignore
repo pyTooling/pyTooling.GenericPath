@@ -4,11 +4,27 @@ __pycache__/
 
 # Coverage.py
 .coverage
+.cov
 coverage.xml
-/.cov
 
-# Sphinx documentation
-doc/_build
+# setuptools
+/build/**/*.*
+/dist/**/*.*
+/*.egg-info
 
-# PyCharm project
+# Dependencies
+!requirements.txt
+
+# Sphinx
+doc/_build/
+doc/pyTooling.GenericPath/**/*.*
+!doc/pyTooling.GenericPath/index.rst
+
+# BuildTheDocs
+doc/_theme/**/*.*
+
+# IntelliJ project files
 /.idea/workspace.xml
+
+# Git files
+!.git*

@@ -1,18 +1,14 @@
 # =============================================================================
-#               ____                      _      ____       _   _
-#  _ __  _   _ / ___| ___ _ __   ___ _ __(_) ___|  _ \ __ _| |_| |__
-# | '_ \| | | | |  _ / _ \ '_ \ / _ \ '__| |/ __| |_) / _` | __| '_ \
-# | |_) | |_| | |_| |  __/ | | |  __/ |  | | (__|  __/ (_| | |_| | | |
-# | .__/ \__, |\____|\___|_| |_|\___|_|  |_|\___|_|   \__,_|\__|_| |_|
-# |_|    |___/
+#             _____           _ _               ____                      _      ____       _   _
+#  _ __  _   |_   _|__   ___ | (_)_ __   __ _  / ___| ___ _ __   ___ _ __(_) ___|  _ \ __ _| |_| |__
+# | '_ \| | | || |/ _ \ / _ \| | | '_ \ / _` || |  _ / _ \ '_ \ / _ \ '__| |/ __| |_) / _` | __| '_ \
+# | |_) | |_| || | (_) | (_) | | | | | | (_| || |_| |  __/ | | |  __/ |  | | (__|  __/ (_| | |_| | | |
+# | .__/ \__, ||_|\___/ \___/|_|_|_| |_|\__, (_)____|\___|_| |_|\___|_|  |_|\___|_|   \__,_|\__|_| |_|
+# |_|    |___/                          |___/
 # =============================================================================
 # Authors:						Patrick Lehmann
 #
 # Python package:	    A specific implementation for URLs.
-#
-# Description:
-# ------------------------------------
-#		TODO
 #
 # License:
 # ============================================================================
@@ -37,7 +33,7 @@ from re       import compile as re_compile
 from typing   import Dict
 
 from flags    import Flags
-from pydecor  import export
+from pyTooling.Decorators import export
 
 from .        import RootMixIn, ElementMixIn, PathMixIn
 
@@ -64,22 +60,22 @@ class Host(RootMixIn):
 	_hostname : str = None
 	_port :     int = None
 
-	def __init__(self, hostname : str, port : int):
+	def __init__(self, hostname : str, port : int) -> None:
 		super().__init__()
 		self._hostname = hostname
 		self._port =     port
 
 	@property
-	def Hostname(self):
+	def Hostname(self) -> str:
 		"""Hostname or IP address as string."""
 		return self._hostname
 
 	@property
-	def Port(self):
+	def Port(self) -> int:
 		"""Port number as integer."""
 		return self._port
 
-	def __str__(self):
+	def __str__(self) -> str:
 		result = self._hostname
 		if self._port is not None:
 			result += ":" + str(self._port)
@@ -116,7 +112,7 @@ class URL():
 	_query:     Dict =      None
 	_fragment:  str =       None
 
-	def __init__(self, scheme, user, password, host, path, query, fragment):
+	def __init__(self, scheme, user, password, host, path, query, fragment) -> None:
 		self._scheme =    scheme
 		self._user =      user
 		self._password =  password
@@ -125,7 +121,7 @@ class URL():
 		self._query =     query
 		self._fragment =  fragment
 
-	def __str__(self):
+	def __str__(self) -> str:
 		result = str(self._path)
 
 		if self._host is not None:

@@ -1,18 +1,14 @@
 # =============================================================================
-#               ____                      _      ____       _   _
-#  _ __  _   _ / ___| ___ _ __   ___ _ __(_) ___|  _ \ __ _| |_| |__
-# | '_ \| | | | |  _ / _ \ '_ \ / _ \ '__| |/ __| |_) / _` | __| '_ \
-# | |_) | |_| | |_| |  __/ | | |  __/ |  | | (__|  __/ (_| | |_| | | |
-# | .__/ \__, |\____|\___|_| |_|\___|_|  |_|\___|_|   \__,_|\__|_| |_|
-# |_|    |___/
+#             _____           _ _               ____                      _      ____       _   _
+#  _ __  _   |_   _|__   ___ | (_)_ __   __ _  / ___| ___ _ __   ___ _ __(_) ___|  _ \ __ _| |_| |__
+# | '_ \| | | || |/ _ \ / _ \| | | '_ \ / _` || |  _ / _ \ '_ \ / _ \ '__| |/ __| |_) / _` | __| '_ \
+# | |_) | |_| || | (_) | (_) | | | | | | (_| || |_| |  __/ | | |  __/ |  | | (__|  __/ (_| | |_| | | |
+# | .__/ \__, ||_|\___/ \___/|_|_|_| |_|\__, (_)____|\___|_| |_|\___|_|  |_|\___|_|   \__,_|\__|_| |_|
+# |_|    |___/                          |___/
 # =============================================================================
 # Authors:						Patrick Lehmann
 #
 # Python package:	    A generic path to derive domain specific path libraries.
-#
-# Description:
-# ------------------------------------
-#		TODO
 #
 # License:
 # ============================================================================
@@ -33,20 +29,33 @@
 # SPDX-License-Identifier: Apache-2.0
 # ============================================================================
 #
+"""
+A generic path to derive domain specific path libraries.
+
+:copyright: Copyright 2017-2021 Patrick Lehmann - Bötzingen, Germany
+:license: Apache License, Version 2.0
+"""
+
+__author__ =    "Patrick Lehmann"
+__email__ =     "Paebbels@gmail.com"
+__copyright__ = "2017-2021, Patrick Lehmann"
+__license__ =   "Apache License, Version 2.0"
+__version__ =   "0.2.2"
+
 from typing import List
 
-from pydecor import export
+from pyTooling.Decorators import export
 
 
 @export
 class Base():
-	"""Base-class for all pyGenericPath path elements"""
+	"""Base-class for all pyTooling.GenericPath path elements"""
 
 	DELIMITER = "/"
 
 	_parent = None #
 
-	def __init__(self, parent):
+	def __init__(self, parent) -> None:
 		self._parent = parent
 
 
@@ -54,7 +63,7 @@ class Base():
 class RootMixIn(Base):
 	"""Mixin-class for root elements in a path system."""
 
-	def __init__(self):
+	def __init__(self) -> None:
 		super().__init__(None)
 
 
@@ -64,11 +73,11 @@ class ElementMixIn(Base):
 
 	_elementName: str = None
 
-	def __init__(self, parent, elementName):
+	def __init__(self, parent, elementName) -> None:
 		super().__init__(parent)
 		self._elementName = elementName
 
-	def __str__(self):
+	def __str__(self) -> str:
 		return self._elementName
 
 
@@ -82,14 +91,14 @@ class PathMixIn():
 	_isAbsolute: bool = None
 	_elements:   List = None
 
-	def __init__(self, elements, isAbsolute):
+	def __init__(self, elements, isAbsolute) -> None:
 		self._isAbsolute = isAbsolute
 		self._elements =   elements
 
-	def __len__(self):
+	def __len__(self) -> int:
 		return len(self._elements)
 
-	def __str__(self):
+	def __str__(self) -> str:
 		result = self.ROOT_DELIMITER if self._isAbsolute else ""
 
 		if (len(self._elements) > 0):
