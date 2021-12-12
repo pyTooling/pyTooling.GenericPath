@@ -41,7 +41,6 @@ DescribePythonPackageHostedOnGitHub(
 	packageName=packageName,
 	description="A generic path implementation to derive domain specific path libraries.",
 	gitHubNamespace=gitHubNamespace,
-	keywords="Python3 Path Generic-Library",
 	sourceFileWithVersion=packageInformationFile,
 	developmentStatus="beta"
 )
