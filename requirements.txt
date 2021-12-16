@@ -1,2 +1,2 @@
 py-flags>=1.1.4
-pyTooling>=1.5.2
+pyTooling>=1.7.0
