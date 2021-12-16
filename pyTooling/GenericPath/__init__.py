@@ -40,7 +40,7 @@ __author__ =    "Patrick Lehmann"
 __email__ =     "Paebbels@gmail.com"
 __copyright__ = "2017-2021, Patrick Lehmann"
 __license__ =   "Apache License, Version 2.0"
-__version__ =   "0.2.3"
+__version__ =   "0.2.4"
 __keywords__ =  ["path", "generic path", "generic library", "url"]
 
 from typing import List
