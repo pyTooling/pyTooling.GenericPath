@@ -28,11 +28,11 @@
 .. |img-pyGenericPath-codacy-quality| image:: https://img.shields.io/codacy/grade/ed13ac3d1be0405ea2de08a588bfd325?logo=Codacy
    :alt: Codacy - Quality
    :height: 22
-   :target: https://www.codacy.com/manual/pyTooling/pyTooling.GenericPath
+   :target: https://www.codacy.com/gh/pyTooling/pyTooling.GenericPath
 .. |img-pyGenericPath-codacy-coverage| image:: https://img.shields.io/codacy/coverage/ed13ac3d1be0405ea2de08a588bfd325?logo=Codacy
    :alt: Codacy - Line Coverage
    :height: 22
-   :target: https://www.codacy.com/manual/pyTooling/pyTooling.GenericPath
+   :target: https://www.codacy.com/gh/pyTooling/pyTooling.GenericPath
 .. |img-pyGenericPath-codecov-coverage| image:: https://img.shields.io/codecov/c/github/pyTooling/pyTooling.GenericPath?logo=Codecov
    :alt: Codecov - Branch Coverage
    :height: 22
