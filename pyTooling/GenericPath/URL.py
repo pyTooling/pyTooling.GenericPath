@@ -59,7 +59,7 @@ class Host(RootMixIn):
 	_hostname : str = None
 	_port :     int = None
 
-	def __init__(self, hostname : str, port : int) -> None:
+	def __init__(self, hostname : str, port : int):
 		super().__init__()
 		self._hostname = hostname
 		self._port =     port
@@ -111,7 +111,7 @@ class URL():
 	_query:     Dict =      None
 	_fragment:  str =       None
 
-	def __init__(self, scheme, user, password, host, path, query, fragment) -> None:
+	def __init__(self, scheme, user, password, host, path, query, fragment):
 		self._scheme =    scheme
 		self._user =      user
 		self._password =  password

@@ -113,7 +113,7 @@ URLs with :class:`~pyGenericPath.URL.URL`.
 Contributors
 ************
 
-* `Patrick Lehmann <https://GitHub.com/Paebbels>`_ (Maintainer)
+* `Patrick Lehmann <https://GitHub.com/Paebbels>`__ (Maintainer)
 * `and more... <https://GitHub.com/pyTooling/pyTooling.GenericPath/graphs/contributors>`__
 
 
@@ -168,6 +168,4 @@ License
    License
    Doc-License
    genindex
-
-.. #
    py-modindex
